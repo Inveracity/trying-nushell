@@ -1,0 +1,8 @@
+version: "3"
+
+services:
+  rust:
+    container_name: rust
+    image: rust:slim-buster
+    volumes:
+      - "${PWD}:/mnt/rust:rw"
