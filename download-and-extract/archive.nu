@@ -40,7 +40,7 @@ export def extract [archive: string]: nothing -> nothing {
     match ($archive | path parse | get extension) {
         "zip" => { ^unzip $archive },
         "tar" => { ^tar xf $archive },
-        "tar.gz" => { ^tar xzf $archive -C ($archive | path parse | get parent) }, # permanent temporary workaround
+        "tar.gz" => { ^tar xzf $archive -C ($archive | path parse | get parent) },
         "tar.bz2" => { ^tar xjf $archive },
         "tar.xz" => { ^tar xf $archive },
         "tar.zst" => { ^tar xf $archive },
