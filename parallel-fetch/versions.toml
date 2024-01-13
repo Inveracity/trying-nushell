@@ -1,0 +1,3 @@
+[tools]
+    "nushell/nushell" = "0.89.0"
+    "bufbuild/buf" = "0.14.1"
